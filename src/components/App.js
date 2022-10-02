@@ -1,8 +1,13 @@
+import SongList from "./SongList";
 
 function App() {
   return (
-    <div className="app">
-      <h1>App</h1>
+    <div className="app ui container grid">
+      <div className="ui row">
+        <div className="column eight wide">
+          <SongList />
+        </div>
+      </div>
     </div>
   );
 }
