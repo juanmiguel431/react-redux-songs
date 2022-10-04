@@ -1,6 +1,5 @@
 import { connect } from "react-redux";
 
-
 const SongDetail = ({ song }) => {
   return (
     <div className="song-detail">
@@ -15,7 +14,7 @@ const SongDetail = ({ song }) => {
 };
 
 const mapStateToProps = (state) => {
-  return { song: state.selectedSong };
+  return { song: state.songs.selected };
 }
 
 export default connect(mapStateToProps)(SongDetail);
